@@ -24,8 +24,8 @@ import java.util.stream.Stream;
 /**
  * The Launcher variant used for Android Go Edition
  */
-public class Launcher3QuickStepGo extends QuickstepLauncher {
-    private static final String TAG = "Launcher3QuickStepGo";
+public class TrebuchetQuickStepGo extends QuickstepLauncher {
+    private static final String TAG = "TrebuchetQuickStepGo";
 
     @Override
     public Stream<SystemShortcut.Factory> getSupportedShortcuts() {

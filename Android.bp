@@ -466,7 +466,7 @@ android_library {
 
 // Library with all the source code and dependencies for building Quickstep
 android_library {
-    name: "Launcher3QuickStepLib",
+    name: "TrebuchetQuickStepLib",
     defaults: [
         "launcher_compose_defaults",
         "quickstep_compose_defaults",
@@ -499,8 +499,8 @@ android_library {
 
 // Build rule for Quickstep app.
 android_app {
-    name: "Launcher3QuickStep",
-    static_libs: ["Launcher3QuickStepLib"],
+    name: "TrebuchetQuickStep",
+    static_libs: ["TrebuchetQuickStepLib"],
     optimize: {
         enabled: false,
     },
@@ -561,7 +561,7 @@ android_app {
         "Home",
         "Launcher2",
         "Launcher3",
-        "Launcher3QuickStep",
+        "TrebuchetQuickStep",
         "QuickSearchBox",
     ],
     required: [
@@ -582,7 +582,7 @@ android_app {
 }
 
 android_app {
-    name: "Launcher3QuickStepGo",
+    name: "TrebuchetQuickStepGo",
     static_libs: ["Launcher3GoLib"],
     resource_dirs: [],
 
@@ -602,7 +602,7 @@ android_app {
         "Home",
         "Launcher2",
         "Launcher3",
-        "Launcher3QuickStep",
+        "TrebuchetQuickStep",
         "QuickSearchBox",
     ],
     required: [
